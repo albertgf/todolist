@@ -1,0 +1,17 @@
+plugins {
+    id("todolist.android.library")
+    id("todolist.android.room")
+    id("todolist.android.koin")
+}
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    namespace 'com.eirrok.todolist.core.database'
+
+}
+
+dependencies {
+    implementation(libs.kotlinx.coroutines.android)
+}
