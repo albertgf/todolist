@@ -4,13 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.eirrok.core.database.dao.TaskDao
+import com.eirrok.core.database.datasource.PersistenceTaskDataSource
 import com.eirrok.core.database.model.TaskEntity
 
 @Database(entities = [TaskEntity::class], version = 1, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract  class AppDatabase : RoomDatabase() {
-    abstract  fun taskDao(): TaskDao
+    abstract  fun taskDataSource(): PersistenceTaskDataSource
 
     companion object{
         @Volatile private var instance: AppDatabase? = null

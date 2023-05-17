@@ -12,10 +12,9 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
             }
-
             extensions.configure<ApplicationExtension> {
                 configureKotlinAndroid(this)
-                defaultConfig.targetSdk = 31
+                defaultConfig.targetSdk = 33
                 //configureGradleManagedDevices(this)
             }
         }

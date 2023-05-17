@@ -1,4 +1,4 @@
-package com.eirrok.core.database
+package com.eirrok.core.testing
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.eirrok.core.database.test", appContext.packageName)
+        assertEquals("com.eirrok.core.testing.test", appContext.packageName)
     }
 }
