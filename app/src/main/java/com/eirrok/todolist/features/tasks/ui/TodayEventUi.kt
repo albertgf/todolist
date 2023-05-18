@@ -1,6 +1,7 @@
 package com.eirrok.todolist.features.tasks.ui
 
-import com.eirrok.todolist.core.domain.model.Task
+import Task
+
 
 sealed class TodayEventUi {
     object ToggleAdd : TodayEventUi()

@@ -1,6 +1,6 @@
-package com.eirrok.todolist.core.data.repository
+package com.eirrok.todolist.data.repository
 
-import com.eirrok.todolist.core.domain.model.Task
+import Task
 import kotlinx.coroutines.flow.Flow
 
 interface TaskRepository {

@@ -1,7 +1,7 @@
-package com.eirrok.todolist.core.domain.usecase
+package com.eirrok.core.domain.usecase
 
-import com.eirrok.todolist.core.data.repository.TaskRepository
-import com.eirrok.todolist.core.domain.model.Task
+import Task
+import com.eirrok.todolist.data.repository.TaskRepository
 import kotlinx.coroutines.flow.Flow
 
 class GetTodayTasksUseCase(private val taskRepository: TaskRepository) {

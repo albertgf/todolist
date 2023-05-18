@@ -1,8 +1,8 @@
-package com.eirrok.todolist.core.data.repository
+package com.eirrok.todolist.data.repository
 
-import com.eirrok.todolist.core.data.mapper.asDomain
-import com.eirrok.todolist.core.data.mapper.asEntity
-import com.eirrok.todolist.core.domain.model.Task
+import Task
+import com.eirrok.todolist.data.mapper.asDomain
+import com.eirrok.todolist.data.mapper.asEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

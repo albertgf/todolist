@@ -1,7 +1,4 @@
-package com.eirrok.todolist.core.domain.model
-
 import java.time.OffsetDateTime
-
 
 data class Task(
     val id: Int? = null,

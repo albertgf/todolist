@@ -1,9 +1,9 @@
-package com.eirrok.todolist.core.data.mapper
+package com.eirrok.todolist.data.mapper
 
+import Task
 import com.eirrok.core.database.model.TaskEntity
-import com.eirrok.todolist.core.domain.model.Task
 
-fun Task.asEntity() = com.eirrok.core.database.model.TaskEntity(
+fun Task.asEntity() = TaskEntity(
     uid = id ?: 0,
     title = title,
     repeat = repeat,
@@ -13,7 +13,7 @@ fun Task.asEntity() = com.eirrok.core.database.model.TaskEntity(
 )
 
 
-fun com.eirrok.core.database.model.TaskEntity.asDomain() = Task(
+fun TaskEntity.asDomain() = Task(
     id = uid,
     title = title,
     completed = completed,

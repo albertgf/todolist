@@ -1,5 +1,6 @@
 package com.eirrok.todolist.features.tasks.ui
 
+import Task
 import android.annotation.SuppressLint
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
@@ -20,7 +21,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.eirrok.core.designsystem.component.*
-import com.eirrok.todolist.core.domain.model.Task
 import org.koin.androidx.compose.getViewModel
 
 @Composable
