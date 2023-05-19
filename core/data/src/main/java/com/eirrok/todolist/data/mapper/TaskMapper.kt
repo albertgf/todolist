@@ -1,7 +1,7 @@
 package com.eirrok.todolist.data.mapper
 
-import Task
 import com.eirrok.core.database.model.TaskEntity
+import com.eirrok.core.model.Task
 
 fun Task.asEntity() = TaskEntity(
     uid = id ?: 0,

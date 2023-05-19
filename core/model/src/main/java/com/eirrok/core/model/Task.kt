@@ -1,3 +1,5 @@
+package com.eirrok.core.model
+
 import java.time.OffsetDateTime
 
 data class Task(

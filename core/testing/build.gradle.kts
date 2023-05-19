@@ -17,13 +17,11 @@ dependencies {
     api(libs.koin.test)
     api(libs.junit)
     api(libs.kotlinx.coroutines.test)
+    api(libs.mockk)
 
     debugApi(libs.androidx.compose.ui.manifest)
 
-    //implementation(project(":core:common"))
-    //implementation(project(":core:data"))
-    //implementation(project(":core:domain"))
-    //implementation(project(":core:model"))
-    //implementation(project(":core:notifications"))
-    //implementation(libs.kotlinx.datetime)
+    implementation(project(":core:data"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:model"))
 }

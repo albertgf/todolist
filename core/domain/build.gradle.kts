@@ -11,4 +11,6 @@ dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:data"))
     implementation(libs.kotlinx.coroutines.android)
+
+    testImplementation(project(":core:testing"))
 }
