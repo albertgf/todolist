@@ -1,4 +1,4 @@
-package com.eirrok.todolist.features.tasks.ui
+package com.eirrok.todolist.tasks.ui
 
 import android.annotation.SuppressLint
 import androidx.activity.compose.BackHandler

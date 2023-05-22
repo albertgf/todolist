@@ -1,14 +1,16 @@
-package com.eirrok.todolist.features.tasks.ui
+package com.eirrok.todolist.tasks.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.eirrok.core.domain.usecase.AddTaskUseCase
+import com.eirrok.core.domain.usecase.GetTodayTasksUseCase
 import com.eirrok.core.model.Task
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 class TodayViewModel(
-    private val addTaskUseCase: com.eirrok.core.domain.usecase.AddTaskUseCase,
-    private val getTodayTasksUseCase: com.eirrok.core.domain.usecase.GetTodayTasksUseCase,
+    private val addTaskUseCase: AddTaskUseCase,
+    private val getTodayTasksUseCase: GetTodayTasksUseCase,
 ) : ViewModel() {
     private val _state = MutableStateFlow(TodayState())
     var state = _state.asStateFlow()

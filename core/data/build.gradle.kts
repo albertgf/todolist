@@ -18,7 +18,7 @@ android {
         implementation(project(":core:database"))
         implementation(libs.kotlinx.coroutines.android)
 
-        testImplementation(":core:testing")
+        testImplementation(project(":core:testing"))
     }
 }
 

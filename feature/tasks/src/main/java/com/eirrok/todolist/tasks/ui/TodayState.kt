@@ -1,4 +1,4 @@
-package com.eirrok.todolist.features.tasks.ui
+package com.eirrok.todolist.tasks.ui
 
 import com.eirrok.core.model.Task
 
